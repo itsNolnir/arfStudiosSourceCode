@@ -1,0 +1,26 @@
+<!--#include file="head.shtml"-->
+<body>
+	<!--#include file="error.shtml" -->
+	<div class="main">
+        	<!-- header area -->
+		<div class="row">
+			<!--#include file="header.shtml" -->
+                </div>
+        	<!-- navigation area -->
+        	<div class="row">
+			<!--#include file="navigation.shtml" -->
+        	</div>
+        	<!-- content box -->
+        	<div class="row">
+        		<div class="content">
+				<!--#include file="homepage.shtml" -->
+			</div>
+        	</div>
+		<!-- footer area -->
+        	<div class="row">
+        		<!--#include file="footer.shtml" -->
+			</div>
+			<!--#include file="arfyBox.shtml" -->
+        </div> 
+</body>
+</html>

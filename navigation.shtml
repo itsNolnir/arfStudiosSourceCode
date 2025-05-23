@@ -1,0 +1,8 @@
+        	<div class="nav">
+				<a href="#"><li><button class="yellow"><h3>About</h3></button></li></a>
+				<a href="#"><li><button class="green"><h3>Gallery</h3></button></li></a>
+				<a href="#"><li><button class="white"><h3>Affiliates</h3></button></li></a>
+				<a href="https://bsky.app/profile/nolnir.com"><ol><h2><i class="fa-brands fa-bluesky"></i></h2></ol></a>
+				<a href="#"><ol><h2><i class="fa-solid fa-book"></i></h2></ol></a>
+
+            </div>

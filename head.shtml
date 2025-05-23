@@ -1,0 +1,32 @@
+<!-- 
+,--.  ,--. ,-----. ,--.   ,--.  ,--.,--.,------.  
+|  ,'.|  |'  .-.  '|  |   |  ,'.|  ||  ||  .--. ' 
+|  |' '  ||  | |  ||  |   |  |' '  ||  ||  '--'.' 
+|  | `   |'  '-'  '|  '--.|  | `   ||  ||  |\  \  
+`--'  `--' `-----' `-----'`--'  `--'`--'`--' '--'        
+code written by NOLNIR 2025 https://nolnir.com
+=================
++ if you decide to use this code for your own personal projects,
++ you may delete the comment text between the ='s but leave the 
++ credit comment above.
+=================
+-->
+<!DOCTYPE html>
+<head>
+	<html lang="en-US">
+	<title>૮˶- ﻌ -˶ა⌒)ᦱ Arf² Studios</title>
+	<meta charset="utf-8">
+	<!--stylesheet link below -->
+	<link href="/style.css" rel="stylesheet">
+	<!--meta information below -->
+    <meta property="og:title" content="૮˶- ﻌ -˶ა⌒)ᦱ Arf!!² Studios" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://arf.nolnir.com" />
+    <meta property="og:image" content="/assets/meta_image.png" />
+	<meta property="og:description" content="Sample website created for artists learning HTML and CSS. by NOLNIR " />
+	<!-- next 4 lines, fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3feaf0278f.js" crossorigin="anonymous"></script>
+</head>

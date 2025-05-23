@@ -1,0 +1,23 @@
+        	<div class="header">
+        		<li><div class="column">
+						<video width="100%" height="auto" autoplay="true" loop="true" muted="true">
+							<source src="/assets/arfheader1.mp4" type="video/mp4">
+        your browser does not support the video tag
+	</video>
+        		</div></li>
+        		<li><div class="column">
+						<video width="100%" height="auto" autoplay="true" loop="true" muted="true">
+							<source src="/assets/arfheader2.mp4" type="video/mp4">
+        your browser does not support the video tag
+	</video>
+        		</div></li>
+        		<li><div class="column">
+						<video width="100%" height="auto" autoplay="true" loop="true" muted="true">
+							<source src="/assets/arfheader3.mp4" type="video/mp4">
+        your browser does not support the video tag
+	</video>
+        		</div></li>
+        		<li><div class="column">
+					<img src="/assets/arfheader4.png">
+        		</div></li>
+        	</div>

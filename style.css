@@ -1,0 +1,303 @@
+    * {
+    		box-sizing: border-box;
+    		font-family: "Sour Gummy", sans-serif;	
+			/*custom font*/
+    		font-weight: 400;
+    		text-transform: lowercase;
+			scrollbar-gutter: stable both-edges;
+			scrollbar-color: var(--dark-blue) var(--dark-yellow);
+			scrollbar-width: thin;
+    }
+
+	:root {
+	/* variables, this makes recalling consistent values easier you 
+	   only need to input the variable tag. Edit the values here and all
+	   elements and classes with it get updated too */
+		--yellow: rgb(254,255,115);
+		--dark-yellow: rgb(255,245,30);
+		--dark-blue: rgb(28,0,255);
+		--green: rgb(115,255,206);
+		--dark-green: rgb(51,255,184);
+		--off-white: rgb(248,246,221);
+		--red: rgb(227,0,75);
+	}
+    /* webkit scrollbar, fallback scrollbar above */
+    *::-webkit-scrollbar  {width:  8px;}		
+    *::-webkit-scrollbar-thumb  {background-color:  var(--dark-blue); border-radius: 10px;}
+    *::-webkit-scrollbar-track  {background-color:  var(--dark-yellow);}
+
+    body {
+		background-color: var(--off-white);
+		margin: 0 auto;
+		font-size: 1.1rem;
+		padding: 0;
+    	overflow: hidden;			
+		/*hide all overflow to prevent scrolling on the page*/
+        background-image: url('assets/arfsparkle.png');
+    }
+    
+    img {
+		width: 100%;				
+		/*all images fill in containers properly at their original size*/
+		height: auto;
+    }
+    
+    h1, h2, h3, h4, h5 {				
+	/*apply to all header selectors*/
+		font-weight: 900;
+		text-transform: uppercase;
+		margin: 0 auto;
+		letter-spacing: .125em;			
+		/*the spacing between each letter*/
+    }
+    
+    a {
+		color: var(--red);
+		text-decoration: none;
+		/*get rid of the underline from default link declaration*/
+    		&:hover {cursor: grab;}
+			/*apply the above declarations when hovering over links*/
+    }
+    
+    p {
+    		margin: .1rem auto;
+    }
+    
+    
+    .right {						
+	/*simple class to align text right neatly*/
+		text-align: right;
+        clear: both;
+        /* prevents any elements outside the container from being on the 
+           same line */
+
+    }
+    
+    .left {						
+	/*simple class to align text left neatly*/
+    	text-align: left;
+        clear: both;
+    }
+    
+    .doggy {font-family: "Noto Sans Symbols 2", sans-serif;}
+	/*for printing a dog symbol*/
+    
+    .arfyError {
+	/* error box that shows when the user's viewport width is too small 
+	   display property set to none so that it's invisible until the threshold
+	   is passed */
+   		display: none;
+   		width: 50%;
+		height: 100vh;
+		margin: 0 auto;
+		align-content: space-around;
+		/*this vertically aligns */
+    }
+
+    
+    .main {
+		background-color: transparent;
+		/*transparent does not need to be defined
+		but this is a safeguard from #fff defaulting*/
+		margin: 0 auto;				
+		padding: 4rem 0;
+		height: 100vh;
+		/*height based on viewport height so it goes*/
+		width: 1000px;
+		/*to the bottom of the window pane*/
+		color: var(--dark-blue);
+    }
+    
+    .row {
+		width: 100%;
+		margin: .5rem auto;
+    	&::after {clear: both;}
+		/* prevents any elements outside the container from being on the same line */
+    }
+    
+    .column {
+	/*generic column*/
+		width: 50%;
+		background-color: transparent;
+		position: relative;
+		margin: 0 auto;
+		float: left;
+		/*container floats towards the left, even if margin centered*/
+    }
+       
+    .header {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		text-align: center;
+   	  	.column {
+		/*nested child class, only effective within .header class*/				
+       			width: 100%;
+        		height: auto;
+        		margin: auto;
+        		border-radius: 5px;
+        		padding: .2rem;
+    	   		float: left;
+        		img {
+				/*nested child class, effective within .column within .header*/		
+            			width: 100%;
+						/*size image to fill in container*/		
+                		height: auto;
+						/*automatically resizes based on the width*/
+              			border-radius: 10px;
+						/*rounded corners*/
+                		object-fit: cover;
+						/*image fills in the entire container like a cover*/
+					
+            		}
+   		}
+        	li,ul,ol {
+				/*list objects, makes it easier to display buttons*/
+        		width: 24%;
+        		height: auto;
+        		margin: .1rem;
+        		display: inline-block;
+				/*displays object side-by-side in a row*/
+        	}
+   	}
+    
+   .nav {
+		width: 100%;
+		margin: auto;
+    		button {
+			font-size: inherit;
+			width: 100%;
+			margin:	.5rem;
+			padding: .5rem;
+			border: 0px;
+			border-radius: 10px;
+			color: var(--dark-blue);
+        		&:hover {
+					cursor: grab;
+					color: var(--red);
+        		}
+        	}
+    		li, ul {
+       			width: 24%;
+        		margin: .1rem;
+        		display: inline-block;
+				/*display buttons as a list but in a row*/
+       		}
+        	ol {
+        		margin: .1rem;
+        		font-size: inherit;
+        		display: inline-block;
+				/*for icons that aren't buttons*/
+        	}
+        	a {
+        		color: var(--dark-blue);
+        		&:hover {
+            			cursor: grab;
+            			color: var(--red);
+            	}
+        	}
+    }
+    
+    /* below are custom colors for navigation buttons */
+
+    .yellow {
+		background-color: var(--yellow);
+		filter: drop-shadow(4px 4px var(--dark-blue));
+     	&:hover {
+			background-color: var(--dark-yellow);
+			filter: drop-shadow(4px 4px var(--red));
+        }
+    }
+    
+    .green {
+		background-color: var(--green);
+		filter: drop-shadow(4px 4px var(--dark-blue));
+          	&:hover {
+				background-color: var(--dark-green);
+				filter: drop-shadow(4px 4px var(--red));
+        	}
+    }
+    
+    .white {
+		background-color: var(--off-white);
+		filter: drop-shadow(4px 4px var(--dark-blue));
+       		&:hover {
+				background-color: var(--yellow);
+				filter: drop-shadow(4px 4px var(--red));
+        	}
+    }
+    
+   .content {
+		width: 100%;
+		height: 300px;
+		background-color: var(--yellow);
+		text-align: left;
+		margin: .2rem auto;
+		padding: .5rem;
+        border: .5rem solid var(--yellow);
+		filter: drop-shadow(5px 5px var(--dark-blue));
+		border-radius: 10px;
+		overflow-y: scroll;	
+		/*force scrollbar to show for example*/
+    	h2 {
+        	&::before {
+				font-family: "Noto Sans Symbols 2", sans-serif;
+				content: '🐕 ';
+        	}
+        }
+		a {
+			&::before {content:"[";}
+			&::after {content:"]";}
+		}
+    }
+    
+    .placeholderBox {
+		background-color: var(--green);
+		float: right;
+		margin: .5rem;
+		width: 200px;
+		height: 200px;
+    }
+    
+    .placeholderBoxAlt {
+		background-color: var(--green);
+		float: left;
+		margin: .5rem;
+		width: 200px;
+		height: 200px;
+    }
+    
+    .footerBox {
+		background-color: var(--yellow);
+		float: right;
+		margin: 1em auto;
+		padding: .5rem;
+		width: 100%;
+		height: 100px;
+		border-radius: 10px;
+        border: .5rem solid var(--yellow);
+		filter: drop-shadow(5px 5px var(--dark-blue));
+    }
+    
+    .arfyBox {
+		background-color: transparent;
+        position: fixed;
+		bottom: -1.125vh;
+		width: 400px;
+		height: auto;
+		overflow: hidden;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+	/* hide the website and display the error message when the viewport
+	   width dips below 1200px */
+    		.main {display: none;}
+    		.arfyError {display: block;}
+    }
+	
+	@media only screen and (max-height: 800px) {
+	/* hide the website and display the error message when the viewport
+	   height dips below 800px */
+    		.main {display: none;}
+    		.arfyError {display: block;}
+    }
