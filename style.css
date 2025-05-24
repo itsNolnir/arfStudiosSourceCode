@@ -1,12 +1,12 @@
     * {
     		box-sizing: border-box;
     		font-family: "Sour Gummy", sans-serif;	
-			/*custom font*/
+		/*custom font*/
     		font-weight: 400;
     		text-transform: lowercase;
-			scrollbar-gutter: stable both-edges;
-			scrollbar-color: var(--dark-blue) var(--dark-yellow);
-			scrollbar-width: thin;
+		scrollbar-gutter: stable both-edges;
+		scrollbar-color: var(--dark-blue) var(--dark-yellow);
+		scrollbar-width: thin;
     }
 
 	:root {
@@ -21,19 +21,15 @@
 		--off-white: rgb(248,246,221);
 		--red: rgb(227,0,75);
 	}
-    /* webkit scrollbar, fallback scrollbar above */
-    *::-webkit-scrollbar  {width:  8px;}		
-    *::-webkit-scrollbar-thumb  {background-color:  var(--dark-blue); border-radius: 10px;}
-    *::-webkit-scrollbar-track  {background-color:  var(--dark-yellow);}
 
     body {
 		background-color: var(--off-white);
 		margin: 0 auto;
 		font-size: 1.1rem;
 		padding: 0;
-    	overflow: hidden;			
+    		overflow: hidden;			
 		/*hide all overflow to prevent scrolling on the page*/
-        background-image: url('assets/arfsparkle.png');
+        	background-image: url('assets/arfsparkle.png');
     }
     
     img {
@@ -56,7 +52,7 @@
 		text-decoration: none;
 		/*get rid of the underline from default link declaration*/
     		&:hover {cursor: grab;}
-			/*apply the above declarations when hovering over links*/
+		/*apply the above declarations when hovering over links*/
     }
     
     p {
@@ -67,16 +63,16 @@
     .right {						
 	/*simple class to align text right neatly*/
 		text-align: right;
-        clear: both;
-        /* prevents any elements outside the container from being on the 
-           same line */
+        	clear: both;
+        	/* prevents any elements outside the container from being on the 
+           	same line */
 
     }
     
     .left {						
-	/*simple class to align text left neatly*/
-    	text-align: left;
-        clear: both;
+		/*simple class to align text left neatly*/
+    		text-align: left;
+        	clear: both;
     }
     
     .doggy {font-family: "Noto Sans Symbols 2", sans-serif;}
@@ -111,7 +107,7 @@
     .row {
 		width: 100%;
 		margin: .5rem auto;
-    	&::after {clear: both;}
+    		&::after {clear: both;}
 		/* prevents any elements outside the container from being on the same line */
     }
     
@@ -234,7 +230,7 @@
 		text-align: left;
 		margin: .2rem auto;
 		padding: .5rem;
-        border: .5rem solid var(--yellow);
+        	border: .5rem solid var(--yellow);
 		filter: drop-shadow(5px 5px var(--dark-blue));
 		border-radius: 10px;
 		overflow-y: scroll;	
@@ -275,13 +271,13 @@
 		width: 100%;
 		height: 100px;
 		border-radius: 10px;
-        border: .5rem solid var(--yellow);
+        	border: .5rem solid var(--yellow);
 		filter: drop-shadow(5px 5px var(--dark-blue));
     }
     
     .arfyBox {
 		background-color: transparent;
-        position: fixed;
+        	position: fixed;
 		bottom: -1.125vh;
 		width: 400px;
 		height: auto;
