@@ -107,8 +107,6 @@
     .row {
 		width: 100%;
 		margin: .5rem auto;
-    		&::after {clear: both;}
-		/* prevents any elements outside the container from being on the same line */
     }
     
     .column {
